@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from domain.entity.entity import CSVWarnDataReport, ProductQuantityWarnReport, ProductNegativePurchasePriceWarnReport, \
+from domain.entity import CSVWarnDataReport, ProductQuantityWarnReport, ProductNegativePurchasePriceWarnReport, \
     ProductNegativeSalePriceWarnReport, ProductSalePriceLessThanPurchaseReport
 
 

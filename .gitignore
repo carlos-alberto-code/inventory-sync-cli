@@ -68,7 +68,6 @@ instance/
 
 # Sphinx documentation
 docs/_build/
-build/
 tmp/
 temp/
 
@@ -149,3 +148,11 @@ venv.bak/
 *.xml
 
 *.env
+
+# La carpeta docs
+docs/
+
+# Los archivos csv
+*.csv
+
+# la carpeta .idea

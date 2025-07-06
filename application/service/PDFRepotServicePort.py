@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from domain.entity.entity import CSVWarnDataReport
+from domain.entity import CSVWarnDataReport
 
 
 class PDFReportServicePort(ABC):
