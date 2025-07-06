@@ -147,3 +147,5 @@ venv.bak/
 
 # Ningún archivo xml
 *.xml
+
+*.env
