@@ -155,4 +155,7 @@ docs/
 # Los archivos csv
 *.csv
 
-# la carpeta .idea
+# ningúna base de datos de SQLite
+*.db
+*.sqlite
+*.sqlite3
