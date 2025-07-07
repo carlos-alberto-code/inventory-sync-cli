@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from datetime import datetime
 
 from domain.model.value_object import SKU, Money
 
@@ -53,3 +54,25 @@ class Product:
             raise ValueError("El ID de la categoría no puede ser cero ni negativo")
         if self.unit_id < 0 or self.unit_id == 0:
             raise ValueError("El ID de la unidad no puede ser cero ni negativo")
+
+
+@dataclass
+class DetailSale:
+    product_sku: SKU
+    quantity: int
+    sale_price: Money
+
+    def __post_init__(self):
+        if self.quantity <= 0:
+            raise ValueError("La cantidad debe ser mayor que cero")
+
+
+@dataclass
+class Sale:
+    date: datetime
+    store_id: int
+    details: list[DetailSale]
+    total: Money
+
+
+
